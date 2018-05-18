@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    font-size: 30px;
+}
+body{
+    margin:0;
+    background-color: rgb(165, 165, 165);    
+}
+
+#dashboard{
+    width: 500px;
+    height: auto;
+    margin: auto;
+}
+header h1{
+    margin: 0;
+    font-size: 50px;
+    color: white;
+}
+header{
+    text-align: center;
+    background-color: rgb(187, 53, 53);
+    border: 1px solid gray;
+    padding-top: 20px ;
+}
+header input{
+    width: 75%;
+    border: 0;
+    padding: 11px 10px 11px 15px;
+}
+header button{
+    width: 25%;
+    border: 0;
+    padding: 11px;
+
+}
+header button:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+
+li{
+    list-style-type: none;
+    border: 1px solid gray;
+    padding: 5px 0px 5px 25px;
+    display: flex;
+    
+}
+
+ul{
+    padding-left: 0;
+    margin: 0;
+    background-color: white;
+    cursor: pointer;
+}
+
+li:hover:not(.completed){
+    background-color: rgb(194, 194, 194);
+    color: white;
+    
+}
+.completed{
+    text-decoration: line-through;
+    color:white;
+    background-color: gray;
+}
+
+ul li span{
+    margin-left: auto;
+}
+
+.close{
+    display:inline-block;
+    padding-right: 5px;
+}
+.close:active{
+    color: rgb(153, 15, 15);
+    transition: color 0.05s;
+}
+.edit{
+    display:inline-block;
+    padding-right: 5px;
+}
+.edit:active{
+    color: rgb(69, 190, 69);
+    transition: color 0.05s;
+}
+
+li input{
+    border: 0;
+    background-color: inherit;
+
+}
